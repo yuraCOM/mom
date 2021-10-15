@@ -1,4 +1,4 @@
-@media (max-width: 420px) {
+﻿@media (max-width: 420px) {
     body {
         min-width: 420px;
         /*max-width: 1024px;*/
@@ -76,6 +76,15 @@
     }
     .quote {
         min-height: auto;
+    }
+}
+
+@media (max-width: 360px) {
+    body {
+        min-width: 360px;
+        /*max-width: 1024px;*/
+        /*max-width: 100%;*/
+        margin: 0 auto;
     }
 }
 
