@@ -1,4 +1,13 @@
-﻿@media (max-width: 420px) {
+﻿.play-list li{
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+.active-audio{
+    color: crimson;
+}
+
+
+@media (max-width: 420px) {
     body {
         min-width: 420px;
         /*max-width: 1024px;*/
