@@ -203,14 +203,15 @@ body {
 
 .date {
   min-height: 28px;
-  font-size: 24px;
+  /*font-size: 24px;*/
+  font-size: 1.5em;
   margin-bottom: 20px;
 }
 
 .greeting-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: stretch;
+  justify-content: center;
   align-items: center;
   min-height: 48px;
   width: 100vw;
@@ -254,7 +255,10 @@ body {
   /*min-height: 160px;*/
   padding: 20px;
 }
-
+.quote-wrapper{
+  border-bottom: 2px solid white;
+  height: 150px;
+}
 .change-quote {
   margin-bottom: 30px;
   background-image: url("../assets/svg/reload.svg");
@@ -271,7 +275,8 @@ body {
 @media (max-width: 768px) {
   .time {
     min-height: 80px;
-    font-size: 72px;
+    /*font-size: 72px;*/
+    font-size: 5em;
   }
 
   .greeting-container {
@@ -287,5 +292,6 @@ body {
     font-size: 32px;
     padding: 5px;
     cursor: pointer;
+    /*text-align: center;*/
   }
 }
