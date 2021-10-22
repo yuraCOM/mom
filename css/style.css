@@ -34,9 +34,11 @@ body {
 .player-controls {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 120px;
-  margin-bottom: 28px;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 5px 0;
 }
 
 .play-list {
@@ -45,8 +47,7 @@ body {
 
 .play-item {
   position: relative;
-  padding: 5px;
-  padding-left: 20px;
+  padding: 5px 5px 5px 20px;
   list-style: none;
   opacity: .8;
   cursor: pointer;
@@ -100,6 +101,7 @@ body {
 }
 
 .play {
+  margin: 0 4px;
   width: 40px;
   height: 40px;
   background-size: 40px 40px;
@@ -117,7 +119,9 @@ body {
 .play-next {
   background-image: url("../assets/svg/play-next.svg");
 }
-
+.duration{
+  margin-left: 5px;
+}
 .weather {
   display: flex;
   flex-direction: column;

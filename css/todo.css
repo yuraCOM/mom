@@ -60,6 +60,9 @@ h1, h2{
     height: 25px;
     cursor: pointer;
 }
+.button-wrapper button:hover{
+    background-color: firebrick;
+}
 
 .todos-wrapper{
     display: flex;
@@ -109,6 +112,9 @@ h1, h2{
 .btn-completed{
     margin: 0 15px;
 }
+.btn-completed:hover{
+    cursor: pointer;
+}
 
 
 .buttons button{
@@ -120,6 +126,9 @@ h1, h2{
     height: 25px;
     border-radius: 5px;
     padding: 0 5px;
+}
+.buttons button:hover{
+    background-color: #3f51b5;
 }
 
 @keyframes opacity {

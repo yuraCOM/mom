@@ -32,6 +32,10 @@ body{
     text-align: center;
     color: aqua;
     font-size: 100px;
+    cursor: pointer;
+}
+#field:hover{
+    background-color: royalblue;
 }
 #result-wrapper{
     /*margin-top: 15px;*/
@@ -49,4 +53,8 @@ body{
     padding: 7px;
     border-radius: 10px;
     margin-bottom: 5px;
+    cursor: pointer;
+}
+#new-game:hover{
+    background-color: darkorange;
 }
