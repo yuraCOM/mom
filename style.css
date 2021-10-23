@@ -29,10 +29,12 @@
 #soundVolume{
     width: 70px;
     margin-left: 5px;
+    cursor: pointer;
 }
 .tools{
     width: 30px;
     margin-left: 5px;
+    cursor: pointer;
 }
 .play-list li{
     cursor: pointer;
@@ -44,7 +46,7 @@
     padding-left: 25px;
 
 }
-/* .play-list li::before{ */
+/*.play-list li::before{*/
     /*content: '';*/
     /*!*background-image: url(assets/svg/play.svg);*!*/
     /*background-size: 20px 20px;*/
@@ -57,10 +59,45 @@
     /*position: relative;*/
     /*top: 4px;*/
     /*margin-right: 5px;*/
-/* } */
+/*}*/
 
 .active-audio{
     color: crimson;
+}
+
+/* tools */
+.pop-tools{
+    position: absolute;
+    z-index: 999;
+    right: 100%;
+    /*right: 0;*/
+    width: 100%;
+    height: 100%;
+    background-color: #00bcd4;
+    transition: 1s linear;
+}
+.pop-tools-wrapper{
+
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+fieldset{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: baseline;
+}
+.pop-tools-wrapper div{
+    margin-top: 15px;
+}
+.pop-tools-wrapper button{
+    padding: 7px 15px;
+}
+
+.hide-item{
+    display: none;
 }
 
 @media (max-width: 640px) {
@@ -75,6 +112,10 @@
          text-align: center;
     }
 }
+
+
+
+
 
 @media (max-width: 425px) {
     body {
@@ -190,4 +231,9 @@
     .greeting-container, .name {
         font-size: 25px;
     }
+}
+
+.hide-item{
+    display: none;
+    transition: opacity 2s linear;
 }
